@@ -1,3 +1,4 @@
+
 * {box-sizing: border-box}
 body {font-family: Verdana, sans-serif; margin:0}
 .mySlides {display: none}
@@ -249,4 +250,96 @@ footer {
     font-size: 14px;
     /*  */
     letter-spacing: 1.5px;
+=======
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body a {
+  text-decoration: none;
+}
+
+/* Header Styling */
+.header {
+  display: flex;
+  position: relative;
+  z-index: 10;
+  height: auto;
+  /* background-color: yellow; */
+  position: fixed;
+  width: 100vw;
+}
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  /* background-color: blueviolet; */
+  width: 100%;
+  padding: 20px;
+  position: absolute;
+}
+.navigation .left-nav {
+  display: flex;
+  align-items: center;
+}
+.left-nav .logo a {
+  color: #b72026;
+  font-size: 28px;
+}
+.links ul {
+  display: flex;
+}
+.links ul li {
+  margin-left: 40px;
+}
+
+.left-nav .links ul li a {
+  color: #fff;
+  /* font-size: 20px; */
+}
+.left-nav ul li {
+  list-style-type: none;
+}
+.navigation .right-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header-content {
+  color: #fff;
+  position: absolute;
+  /* 
+    display: inline;
+    text-align: center; */
+  /* padding-top: 100px;
+    padding-bottom: 100px; */
+  background-image: url("./img/blog.jpg");
+  height: 100vh;
+  width: 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.header-content .header-text {
+  font-size: 50px;
+  font-weight: lighter;
+  position: absolute;
+  top: 40%;
+  /* margin: 0px auto; */
+  left: 200px;
+}
+.header-content .header-text h5,
+button {
+  margin-left: 300px;
+  margin-top: 30px;
+}
+.header-text {
+  display: block;
+  justify-content: center;
+}
+.btn {
+  padding: 10px 40px;
+  border-radius: 20px;
+
 }
